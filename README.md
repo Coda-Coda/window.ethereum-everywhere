@@ -16,7 +16,7 @@ The script also sets the variable `window_ethereum_info` to either `"ethvault"` 
 
 - **Page accessed via Brave or in a browser with MetaMask**: window.ethereum will not be changed, ethvault poly-fill will not be loaded
 - **Page accessed via browser without MetaMask**: will redirect to myethvault.com/browse# + currentURL. And then the next scenario should apply
-- **Page is in an iframe and query string contains ethvault=1**: ethvault poly-fill will be loaded and will replace window.ethereum
+- **Page is in an iframe and query string contains ethvault=1**: [ethvault poly-fill](https://github.com/ethvault/iframe-provider-polyfill) will be loaded and will replace window.ethereum
     - This will still take place even in Brave or with MetaMask so that using the Dapp within MyEthVault.com uses the MyEthVault wallet on all browsers. With Brave or MetaMask if the page is not loaded within MyEthVault then the MetaMask or Brave wallet will work, as per the first scenario.
 
 # Requirements:
