@@ -3,7 +3,7 @@ This is a simple javascript script making use of myEthVault when appropriate to 
 Include in your site by adding the following:
 
 ```html
-<script src="https://coda-coda.github.io/window.ethereum-everywhere/versions/window.ethereum-everywhere-v2.0.0.js" integrity="sha384-nSmgJB1h5Sqf4qDgOevGGsKhM8kBNWuf8qltIIImaXkYNX4RXI+piAk2mkS5aeE4" crossorigin="anonymous"></script>
+<script src="https://coda-coda.github.io/window.ethereum-everywhere/versions/window.ethereum-everywhere-v2.1.0.js" integrity="sha384-3ZnBvBjQK3jnWnaKuTnduWUui4PMu48b/r8+eQaT/YRL8603l36/rp39+fEBSHYy" crossorigin="anonymous"></script>
 ```
 
 The script also sets the variable `window_ethereum_info` to either `"ethvault"` or `"injected"` to reflect how `window.ethereum` was set.
