@@ -41,16 +41,15 @@ else {
                 window.location.href = "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server";
                 alert("Loading...");
             }
-            alert("Otherwise, you will need to host your site, possibly GitHub pages will work.\nClick OK to be redirected to their instructions.")
-            window.location.href = "https://pages.github.com/"
+            alert("Otherwise, you will need to host your site, possibly GitHub pages will work.\nClick OK to be redirected to their instructions.");
+            window.location.href = "https://pages.github.com/";
         }
 
         
         else {
             // Check site is served using https
             if (window.location.protocol != 'https:') {
-                alert("myEthVault requires embedded sites to be served using https, perhaps consider using GitHub pages.\nClick OK to be redirected to their instructions.")
-                window.location.href = "https://pages.github.com/"
+                window.location.href = "https://en.wikipedia.org/wiki/HTTPS";
             }
             else {
                 // Redirect to myEthVault
