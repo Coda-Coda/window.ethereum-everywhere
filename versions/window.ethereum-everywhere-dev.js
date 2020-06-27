@@ -49,6 +49,7 @@ else {
         else {
             // Check site is served using https
             if (window.location.protocol != 'https:') {
+                alert("myEthVault requires embedded sites to be served using HTTPS, try changing the start of the url to 'https://'.\nClick OK to be redirected to the Wikipedia article on HTTPS.");
                 window.location.href = "https://en.wikipedia.org/wiki/HTTPS";
             }
             else {
