@@ -45,10 +45,18 @@ else {
             window.location.href = "https://pages.github.com/"
         }
 
-        // Redirect to myEthVault
-        else { 
-            let currentURL = window.location.href;
-            window.location.href = "https://myethvault.com/browse#" + currentURL;
+        
+        else {
+            // Check site is served using https
+            if (window.location.protocol != 'https:') {
+                alert("myEthVault requires embedded sites to be served using https, perhaps consider using GitHub pages.\nClick OK to be redirected to their instructions.")
+                window.location.href = "https://pages.github.com/"
+            }
+            else {
+                // Redirect to myEthVault
+                let currentURL = window.location.href;
+                window.location.href = "https://myethvault.com/browse#" + currentURL;
+            }
         }
     }
 }
